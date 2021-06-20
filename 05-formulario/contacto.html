@@ -73,7 +73,11 @@
 					<input type="checkbox" id="checkbox" class="form-check-input" name="checkbox" />
 					<label for="checkbox" class="form-check-label">Terminos</label>
 				</div>
-				<button type="submit" class="btn btn-primary w-100">Enviar</button>
+				<button type="submit" id="btnEnviar" class="btn btn-primary w-100">Enviar</button>
+				<button id="btnCargando" class="btn btn-secondary w-100 d-none" disabled>
+					<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+					Cargando...
+				</button>
 			</form>
 		</div>
 		<script
