@@ -7,5 +7,6 @@ formulario.addEventListener('submit', (e) => {
 	const data = new FormData(formulario);
 	console.log('Campo Email:', data.get('email'));
 	console.log('Campo Password:', data.get('password'));
+	console.log('Campo Checkbox:', data.get('checkbox'));
 	formulario.reset();
 });
