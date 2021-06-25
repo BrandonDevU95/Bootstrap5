@@ -11503,4 +11503,17 @@ fieldset:disabled .btn {
   background-color: #3cb4ab;
   border-color: #f8f9fa;
 }
+
+header {
+  background-image: url("../img/547-1400x500.jpeg");
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 500px;
+  }
+}
 /*# sourceMappingURL=custom.css.map */

@@ -10,3 +10,16 @@ $primary: #3cb4ab;
 	background-color: $primary;
 	border-color: $light;
 }
+
+header {
+	background-image: url('../img/547-1400x500.jpeg');
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+}
+
+@include media-breakpoint-up(md) {
+	header {
+		height: 500px;
+	}
+}
