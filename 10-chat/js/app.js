@@ -8,8 +8,10 @@ const texto = document.querySelector('#texto');
 firebase.auth().onAuthStateChanged((user) => {
 	if (user) {
 		accionCerrarSesion();
+		nombreUsuario.innerHTML = user.displayName;
 	} else {
 		accionAcceder();
+		nombreUsuario.innerHTML = 'Bchat';
 	}
 });
 
