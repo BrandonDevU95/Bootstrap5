@@ -17,9 +17,21 @@ const accionAcceder = () => {
 	console.log('Sin Usuario');
 	formulario.classList.add('d-none');
 	contenidoWeb.innerHTML = `<p class="lead mt-5 text-center">Debes iniciar sesión</p>`;
+
+	btnIngreso.addEventListener('click', async () => {
+		const provider = new firebase.auth.GoogleAuthProvider();
+		try {
+			await firebase.auth().signInWithPopup(provider);
+		} catch (error) {
+			console.log(error);
+		}
+	});
 };
 
 const accionCerrarSesion = () => {
 	console.log('Usuario');
 	formulario.classList.remove('d-none');
+	btnCerrarSesion.addEventListener('click', () => {
+		firebase.auth().signOut();
+	});
 };
