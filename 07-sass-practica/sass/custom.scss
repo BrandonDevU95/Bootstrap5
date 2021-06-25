@@ -5,3 +5,8 @@ $font-family-base: 'Montserrat', sans-serif;
 $primary: #3cb4ab;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
+
+.nav-form-control {
+	background-color: $primary;
+	border-color: $light;
+}

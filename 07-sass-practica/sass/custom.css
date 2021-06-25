@@ -11498,4 +11498,9 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+
+.nav-form-control {
+  background-color: #3cb4ab;
+  border-color: #f8f9fa;
+}
 /*# sourceMappingURL=custom.css.map */
